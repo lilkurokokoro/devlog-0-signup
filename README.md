@@ -6,7 +6,7 @@ Stack: SolidStart, TailwindCSS
 
 ## DEVLOG 0.33 SAMPLE SIGNUP FORM (we'll finish it now)
 
-*To-Do:*
+_To-Do:_
 
 - Layout (wip)
 
@@ -15,3 +15,13 @@ Stack: SolidStart, TailwindCSS
 - Mock Back-End
 
 now!!
+
+upd: finishing for now coz im tired (╥_╥)
+
+its 6:30am
+
+me af
+
+see uuuuu
+
+ill post the schedule soon ☆*。★ ﾟ*♪ ヾ(☆ ゝ з・)ノ
