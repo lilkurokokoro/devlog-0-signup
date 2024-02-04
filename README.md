@@ -3,3 +3,15 @@
 Task: create sample signup form using this Figma file: https://www.figma.com/file/7CvCi6oBU5QfBZcQbnVhXV/DEVLOG-0.-Sample-Sign-in-Form?type=design&node-id=0%3A1&mode=design&t=wdKYO76Ye15sLq8q-1
 
 Stack: SolidStart, TailwindCSS
+
+## DEVLOG 0.33 SAMPLE SIGNUP FORM (we'll finish it now)
+
+*To-Do:*
+
+- Layout (wip)
+
+- Form Programming
+
+- Mock Back-End
+
+now!!

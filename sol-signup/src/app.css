@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --accent: theme(colors.orange.300);
+    --primary: theme(colors.neutral.800);
+    --secondary: theme(colors.white);
+  }
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
