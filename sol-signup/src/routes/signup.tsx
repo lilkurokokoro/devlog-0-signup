@@ -1,4 +1,5 @@
 import { createForm, email, minLength, required } from "@modular-forms/solid";
+import { TextInput } from "~/components/TextInput";
 
 // TODO: add textarea
 type SignUpForm = {
@@ -11,11 +12,7 @@ export default function Signup() {
 
   return (
     <main>
-      <Form
-        onSubmit={() => {
-          console.log("do nothing");
-        }}
-      >
+      <div class="space-y-8 md:space-y-10 lg:space-y-12">
         <Field
           name="email"
           validate={[
@@ -23,7 +20,17 @@ export default function Signup() {
             email("The email address is badly formatted."),
           ]}
         >
-          {(field, props) => <input {...props} type="email" />}
+          {(field, props) => (
+            <TextInput
+              {...props}
+              value={field.value}
+              error={field.error}
+              type="email"
+              label="Email"
+              placeholder="example@email.com"
+              required
+            />
+          )}
         </Field>
         <Field
           name="password"
@@ -33,14 +40,18 @@ export default function Signup() {
           ]}
         >
           {(field, props) => (
-            <>
-              <input {...props} type="password" required />
-              {field.error && <div>{field.error}</div>}
-            </>
+            <TextInput
+              {...props}
+              value={field.value}
+              error={field.error}
+              type="password"
+              label="Password"
+              placeholder="********"
+              required
+            />
           )}
         </Field>
-        <button type="submit">Sign Up</button>
-      </Form>
+      </div>
     </main>
   );
 }
