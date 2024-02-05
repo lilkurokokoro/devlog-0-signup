@@ -25,3 +25,9 @@ me af
 see uuuuu
 
 ill post the schedule soon ☆*。★ ﾟ*♪ ヾ(☆ ゝ з・)ノ
+
+---
+
+- Add Modular Forms
+- Stylize the Form
+- Deploy on Vercel
