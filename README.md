@@ -4,6 +4,8 @@ Task: create sample signup form using this Figma file: https://www.figma.com/fil
 
 Stack: SolidStart, TailwindCSS
 
+Codesandbox: https://codesandbox.io/p/devbox/github/lilkurokokoro/devlog-0-signup/tree/main/
+
 ## DEVLOG 0.33 SAMPLE SIGNUP FORM (we'll finish it now)
 
 _To-Do:_
@@ -30,4 +32,4 @@ ill post the schedule soon ☆*。★ ﾟ*♪ ヾ(☆ ゝ з・)ノ
 
 - Add Modular Forms (check 3:44 07.02.2024)
 - Stylize the Form (check 3:44 07.02.2024)
-- Deploy on Vercel (???)
+- Deploy on Vercel (???) upd: codesandbox did better
