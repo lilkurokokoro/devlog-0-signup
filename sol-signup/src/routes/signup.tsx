@@ -5,6 +5,7 @@ import { TextInput } from "~/components/TextInput";
 type SignUpForm = {
   email: string;
   password: string;
+  password2: string;
 };
 
 export default function Signup() {
@@ -13,6 +14,7 @@ export default function Signup() {
   return (
     <main>
       <div class="space-y-8 md:space-y-10 lg:space-y-12">
+        <Form onSubmit={() => console.log("FORM onSubmit")}>
         <Field
           name="email"
           validate={[
@@ -51,6 +53,29 @@ export default function Signup() {
             />
           )}
         </Field>
+        <Field
+          name="password2"
+          validate={[
+            required("Please enter your password."),
+            minLength(8, "You password must have 8 characters or more."),
+          ]}
+        >
+          {(field, props) => (
+            <TextInput
+              {...props}
+              value={field.value}
+              error={field.error}
+              type="password"
+              label="Repeat Password"
+              placeholder="********"
+              required
+            />
+          )}
+        </Field> 
+         
+        <input class="bg-orange-300" type="submit" value="Sign Up" />
+        </Form>
+     
       </div>
     </main>
   );

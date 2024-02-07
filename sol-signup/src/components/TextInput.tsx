@@ -46,7 +46,6 @@ export function TextInput(props: TextInputProps) {
 
   return (
     <div class={clsx(!props.padding && "px-8 lg:px-10", props.class)}>
-      <script>alert('ALERT!')</script>
       <InputLabel
         name={props.name}
         label={props.label}
