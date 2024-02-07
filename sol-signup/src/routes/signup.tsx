@@ -80,11 +80,11 @@ export default function Signup() {
           </Field>
           <SubmitButton
             value="Sign Up"
-            class="mx-auto lg:mx-10 h-14 w-64 rounded-2xl bg-orange-300 md:h-16 md:text-lg lg:h-[70px]  lg:text-xl cursor-pointer hover:bg-orange-400"
+            class="mx-auto h-14 w-64 rounded-2xl bg-orange-300 md:h-16 md:text-lg lg:h-[70px]  lg:text-xl cursor-pointer hover:bg-orange-400"
           />
           <A
-            class="mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px]  lg:text-xl"
-            href="/signin"
+            class="text-center text-neutral-500 hover:text-neutral-400 hover:underline mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px]  lg:text-xl"
+            href="/login"
           >
             I already have an account
           </A>

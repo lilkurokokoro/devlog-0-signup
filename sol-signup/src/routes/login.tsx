@@ -4,14 +4,13 @@ import { SubmitButton } from "~/components/SubmitButton";
 import { A } from "@solidjs/router";
 
 // TODO: add textarea
-type SignInForm = {
+type loginForm = {
   email: string;
   password: string;
-  password2: string;
 };
 
-export default function Signin() {
-  const [SignInForm, { Form, Field, FieldArray }] = createForm<SignInForm>();
+export default function Login() {
+  const [loginForm, { Form, Field, FieldArray }] = createForm<loginForm>();
 
   return (
     <main>
@@ -59,28 +58,12 @@ export default function Signin() {
               />
             )}
           </Field>
-          <Field
-            name="password2"
-            validate={[
-              required("Please enter your password."),
-              minLength(8, "You password must have 8 characters or more."),
-            ]}
-          >
-            {(field, props) => (
-              <TextInput
-                {...props}
-                value={field.value}
-                error={field.error}
-                type="password"
-                label="Repeat Password"
-                placeholder="********"
-                required
-              />
-            )}
-          </Field>
-          <SubmitButton />
+          <SubmitButton
+            value="Log In"
+            class="mx-auto h-14 w-64 rounded-2xl bg-orange-300 md:h-16 md:text-lg lg:h-[70px]  lg:text-xl cursor-pointer hover:bg-orange-400"
+          />
           <A
-            class="mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px] lg:text-xl"
+            class="text-center text-neutral-500 hover:text-neutral-400 hover:underline mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px] lg:text-xl"
             href="/signup"
           >
             Create new account
