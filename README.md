@@ -28,6 +28,6 @@ ill post the schedule soon ☆*。★ ﾟ*♪ ヾ(☆ ゝ з・)ノ
 
 ---
 
-- Add Modular Forms
-- Stylize the Form
+- Add Modular Forms (check 3:44 07.02.2024)
+- Stylize the Form (check 3:44 07.02.2024)
 - Deploy on Vercel
