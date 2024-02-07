@@ -1,5 +1,7 @@
 import { createForm, email, minLength, required } from "@modular-forms/solid";
 import { TextInput } from "~/components/TextInput";
+import { SignUpButton } from "~/components/SignUpButton";
+import { AlreadyHaveAccountButton } from "~/components/AlreadyHaveAccountButton";
 
 // TODO: add textarea
 type SignUpForm = {
@@ -13,8 +15,12 @@ export default function Signup() {
 
   return (
     <main>
-      <div class="space-y-8 md:space-y-10 lg:space-y-12">
-        <Form onSubmit={() => console.log("FORM onSubmit")}>
+      <div class="space-y-8 md:space-y-10 lg:space-y-12 mt-24">
+        <img class="mx-auto" src="/logo.svg" />
+        <Form
+          class="flex flex-col gap-4"
+          onSubmit={() => console.log("FORM onSubmit")}
+        >
           <Field
             name="email"
             validate={[
@@ -72,6 +78,8 @@ export default function Signup() {
               />
             )}
           </Field>
+          <SignUpButton />
+          <AlreadyHaveAccountButton />
         </Form>
       </div>
     </main>
