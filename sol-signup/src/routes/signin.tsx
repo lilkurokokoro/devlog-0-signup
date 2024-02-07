@@ -4,14 +4,14 @@ import { SubmitButton } from "~/components/SubmitButton";
 import { A } from "@solidjs/router";
 
 // TODO: add textarea
-type SignUpForm = {
+type SignInForm = {
   email: string;
   password: string;
   password2: string;
 };
 
-export default function Signup() {
-  const [signupForm, { Form, Field, FieldArray }] = createForm<SignUpForm>();
+export default function Signin() {
+  const [SignInForm, { Form, Field, FieldArray }] = createForm<SignInForm>();
 
   return (
     <main>
@@ -78,15 +78,12 @@ export default function Signup() {
               />
             )}
           </Field>
-          <SubmitButton
-            value="Sign Up"
-            class="mx-auto lg:mx-10 h-14 w-64 rounded-2xl bg-orange-300 md:h-16 md:text-lg lg:h-[70px]  lg:text-xl cursor-pointer hover:bg-orange-400"
-          />
+          <SubmitButton />
           <A
-            class="mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px]  lg:text-xl"
-            href="/signin"
+            class="mx-auto h-14 w-64 ml-auto rounded-2xl md:h-16 md:text-lg lg:h-[70px] lg:text-xl"
+            href="/signup"
           >
-            I already have an account
+            Create new account
           </A>
         </Form>
       </div>
